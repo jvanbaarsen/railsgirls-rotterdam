@@ -15,6 +15,7 @@ gem "font-awesome-sass", "~> 4.5.0"
 gem "bootstrap_form", "~> 2.3.0"
 gem "rails_12factor", group: :production
 gem 'puma', require: false
+gem "active_attr"
 
 group :development do
   gem "spring"

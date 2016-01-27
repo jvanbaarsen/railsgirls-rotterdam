@@ -12,7 +12,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render "flashes" -%>
-  <%= yield %>
+  <div class="jumbotron text-center header">
+    <h1>Railsgirls Rotterdam</h1>
+    <p>14, 15 & 16 April 2016</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <%= render "flashes" -%>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
