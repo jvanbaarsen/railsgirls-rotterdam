@@ -1,16 +1,16 @@
 <div class="panel panel-default">
-  <%= bootstrap_form_tag url: "https://formbox.es/4NT3MfwE6kwF5MB96iY5uzW7" do |f| %>
+  <%= bootstrap_form_tag url: "https://formbox.es/4NT3MfwE6kwF5MB96iY5uzW7?return_to=#{thanks_url}" do |f| %>
     <div class="panel-body">
-      <%= f.text_field :name %>
-      <%= f.text_field :age %>
-      <%= f.text_field :gender %>
-      <%= f.email_field :email %>
+      <%= f.text_field :name, label: "Name *", required: true %>
+      <%= f.text_field :age, label: "Age *", required: true %>
+      <%= f.text_field :gender, label: "Gender *", required: true %>
+      <%= f.email_field :email, label: "Email *", required: true %>
       <%= f.text_field :phone_number %>
-      <%= f.text_field :education_level %>
-      <%= f.text_field :area_of_study %>
-      <%= f.text_field :coding_experience %>
-      <%= f.text_field :special_diet, label: "Special dietary requirments or allergies?" %>
-      <%= f.text_area :motivation %>
+      <%= f.text_field :education_level, label: "Education level (e.g. highschool, university) *", required: true %>
+      <%= f.text_field :area_of_study, label: "Area of study *", required: true %>
+      <%= f.text_field :coding_experience, label: "Coding experience (such as building websites, creating applications or other)"  %>
+      <%= f.text_field :special_diet, label: "Special dietary requirments or allergies" %>
+      <%= f.text_area :motivation, label: "Motivation (perhaps you have never coded before and want to see if you like it or maybe you would like to gain more experience)" %>
     </div>
     <div class="panel-footer">
       <%= f.submit "Register" %>
